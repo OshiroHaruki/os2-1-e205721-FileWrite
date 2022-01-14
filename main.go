@@ -3,6 +3,7 @@ package main
 import (
 	"flag"
 	"fmt"
+	"os-2-1/fileRead"
 	"os-2-1/fileWrite"
 )
 
@@ -11,13 +12,12 @@ func sub1() {
 }
 
 func main() {
-	// fmt.Println("Hello, World!")
-	// fmt.Println(fileWrite.Hello("haru"))
-	u := fileWrite.FileIO{}
-	u = getOpts(u)
+	//fmt.Println("Hello, World!")
+	//fmt.Println(fileWrite.Hello("haru"))
+	//u := fileWrite.FileIO{}
+	//u = getOpts(u)
 
-	u.FileWrite()
-	sub1()
+	fileRead.FileRead("testData.txt")
 	fmt.Println("hello,世界")
 }
 
